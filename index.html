@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toreffy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a id="logo" href="#" style="text-decoration: none;">
+            <img src="Logo.png" style="height: 90px; width: 110px;">
+        </a>
+        <a id="name" href="#" style="text-decoration: none;">
+            <img src="Name.png" style="height: 90px; width: 110px;">
+        </a>
+        <a id="header-space" href="#" style="text-decoration: none;"></a>
+        <a id="home" href="#" style="text-decoration: none;">
+            Home
+        </a>
+        <a id="coins" href="#" style="text-decoration: none;">   
+            Coins
+        </a>
+        <a id="guides" href="#" style="text-decoration: none;">
+            Guides
+        </a>
+        <span id="menu" style="font-size:24px; cursor:pointer" onclick="openside()">&#9776;</span>
+        <div id="side-menu" class="side-menu">
+            <a href="javascript:void(0)" style="text-decoration: none;" class="sidebtn" onclick="closeside()">&times;</a>
+            <a id="side-home" href="#" style="text-decoration: none;">Home</a>
+            <a id="side-coins" href="#" style="text-decoration: none;">Coins</a>
+            <a id="side-guides" href="#" style="text-decoration: none;">Guides</a>
+            <a id="side-about" href="#" style="text-decoration: none;">About</a>
+            <a id="side-contact" href="#" style="text-decoration: none;">Contact</a>
+        </div>
+    </div>
+    <section class="directory">
+        <a id="dir-home" href="index.html" style="text-decoration: none;">
+            Home >
+        </a>
+        <a id="dir-coins" href="index.html" style="text-decoration: none;">
+            Coins >
+        </a>
+        <a id="dir-not-pixel" href="index.html" style="text-decoration: none;">
+            What Is Not Pixel 
+        </a>
+    </section>
+    <div class="content">
+        <section class="content-img">
+
+        </section>
+    </div>
+    <div class="footer"></div>
+    <script>
+    function openside() {
+        document.getElementById("side-menu").style.width = "250px";
+      }
+      function closeside() {
+        document.getElementById("side-menu").style.width = "0";
+      }
+      </script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+body{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+    margin-inline: 48px;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+    justify-content: center;
+    padding-inline: 24px;
+}
+
+#menu, .menu, .side-menu{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    #home, #coins, #guides{
+        display: none;
+    }
+    .header{
+        padding-inline: 0px;
+    }
+    body{
+        margin-inline: 24px;
+    }
+    #menu{
+        display: block;
+        padding: 18px 0px 18px 18px;
+        cursor: pointer;
+        color: salmon;
+        font-size: 24px;
+        margin-top: -12px;
+        font-weight: bold;
+    }
+    #menu:hover{
+        color: #222;
+    }
+    .side-menu{
+        position: fixed;
+        padding: 6px 0px 0px 0px;
+        right: 0px;
+        top: 30px;
+        color: #222;
+        font-size: 12px;
+        display: flex;
+        width: 0px;
+        height: 100%;
+        background-color: salmon;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+        overflow-x: hidden;
+        transition: 0.5s;
+        z-index: 1;
+    }
+    #side-home, #side-coins, #side-guides, #side-about, #side-contact{
+        width: 200px;
+        text-align: center;
+        border-bottom: 1px solid #222;
+        padding-bottom: 12px;
+        color: #222;
+        font-weight: bold;
+    }
+    #side-home:hover, #side-coins:hover, #side-guides:hover, #side-about:hover, #side-contact:hover{
+        color: white;
+    }
+    .sidebtn{
+        color: #222; 
+        font-size: 32px;
+        margin-left: 180px;
+    }
+    .sidebtn:hover{
+        color: white;
+    }
+}
+
+#logo{ 
+    cursor: pointer;
+    align-items: center;
+    margin-top: 4px;
+}
+
+#name{ 
+    cursor: pointer;
+    align-items: center;
+    margin-left: -38px;
+    margin-top: 4px;
+}
+
+#header-space{
+    flex: 1;
+}
+
+#home{
+    font-weight: bold;
+    color: salmon;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -4px;
+}
+
+#home:hover{
+    color: #222;
+}
+
+#coins{
+    font-weight: bold;
+    color: #222;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -4px;
+}
+
+#guides{
+    font-weight: bold;
+    color: #222;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: -4px;
+}
+
+#coins:hover, #guides:hover{
+    color: salmon;
+
+}
+
+.directory{
+    font-size: 14px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+#dir-home, #dir-coins{
+    color: salmon;
+}
+
+#dir-home:hover, #dir-coins:hover{
+    color: #222;
+}
+
+#dir-not-pixel{
+    color: #222;
+}
+
+#dir-not-pixel:hover{
+    color: salmon;
+}
+
+.content{
+    height: 100vh;
+    background-color: salmon;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-img{
+    
+}
+
+.footer{
+    border: 2px solid salmon;
+    padding: 24px;
+    margin-top: 12px;
+}
