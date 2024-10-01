@@ -1,0 +1,366 @@
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.header{
+    background-color: #DFD3C3;
+    padding: 12px 12px 12px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+    width: inherit;
+    position: sticky;
+}
+
+#logo{
+    height: 80px;
+    width: 90px;
+    margin-left: 12px;
+}
+
+#logo-img{
+    height: inherit;
+    width: inherit;
+}
+
+#logo-text{
+    height: 30px;
+    width: 120px;
+    margin-left: -12px;
+}   
+
+#logo-name{
+    object-fit: cover;
+    height: inherit;
+    width: inherit;
+}
+
+#search{
+    margin-left: 0px;
+}
+
+#search-box{
+    border: none;
+    border-radius: 24px;
+    width: 240px;
+    font-size: 12px;
+    padding: 12px 12px 12px 36px;
+    font-family: "Poppins", sans-serif;
+}
+
+#search-button{
+    border: none;
+    height: inherit;
+    width: inherit;
+    color: black;
+    margin-right: -42px;
+    z-index: 1;
+}
+
+#header-space{
+    padding: 12px;
+    flex: 1;
+}
+
+#home{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#about{
+    color: black;
+    font-size: 16px;
+    padding-inline: 24px;
+    font-weight: bold;
+}
+
+#contact{
+    color: black;
+    font-size: 16px;
+    margin-right: 24px;
+    font-weight: bold;
+}
+
+#home:hover, #about:hover, #contact:hover{
+    border-bottom: 2px solid #C5705D;
+    transition: 0.1s ease-in-out;
+}
+
+#open-side{
+    font-size: 30px;
+    margin-right: 6px;
+    display: none;
+}
+
+#side-nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    right:-20px;
+    width: 0px;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 24px;
+    gap: 6px;
+    background-color: #C5705D;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+#side-nav a{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    width: 120px;
+    margin-left: -18px;
+    padding: 12px;
+}
+
+#side-nav a:hover{
+    border-bottom: 2px solid black;
+}
+
+#side-nav span{
+    color: #DFD3C3;
+    width: 200px;
+    font-size: 16px;
+    text-align: right;
+    margin-left: -18px;
+    padding: 12px;
+    transition: 0.1s ease-in-out;
+}
+
+#side-nav span:hover{
+    color: black;
+}
+
+#side-nav i{
+    margin-right: 24px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    flex-wrap: wrap;
+}
+
+#content-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+    width: 800px;
+}
+
+#writer{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#writer p{
+    font-size: 12px;
+    text-align: center;
+    color: #C5705D;
+}
+
+#writer h6{
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
+
+#follow-writer{
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-writer{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-top: 24px;
+    margin-left: -20px;
+}
+
+#read{
+    text-align: center;
+    flex: 1;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+#main-content{
+    font-size: 14px;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    flex-wrap: wrap;
+}
+
+#main-content h4{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+#NPIcon-wrapper{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    transition: 0.1s ease-in-out;
+    margin-bottom: 18px;
+}
+
+#NPIcon-wrapper:hover{
+    padding: 6px;
+}
+
+#NPIcon-img{
+    height: 400px;
+    width: 500px;
+}
+
+@media screen and (max-width: 900px) {
+    .header{
+        width: inherit;
+        padding-right: 24px;
+    }
+    #search{
+        flex: 1;
+    }
+    #search-box{
+        font-size: 12px;
+        padding: 6px 6px 6px 36px;
+    }
+    #header-space{
+        display: none;
+    }
+    #home, #about, #contact{
+        display: none;
+    }
+    .content{
+        padding: 24px;
+    }
+    #content-title{
+        font-size: 24px;
+    }
+    #open-side{
+        display: block;
+        font-size: 24px;
+    }
+    #logo{
+        height: 60px;
+        width: 70px;
+    }
+    #logo-text{
+        height: 30px;
+        width: 90px;
+    }
+    #content-title{
+        font-size: 18px;
+        width: inherit;
+        flex-wrap: wrap;
+    }
+    #NPIcon-wrapper{
+        width: 100%;
+    }
+    #NPIcon-img{
+        height: 300px;
+        width: 350px;
+    }
+    #main-content{
+        font-size: 12px;
+        width: inherit;
+        margin-bottom: 200px;
+    }
+    #writer{
+        margin-top: 0px;
+        margin-bottom: -50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #search, #search-box, #search-button{
+        display: none;
+    }
+    #header{
+        padding: 0px;
+    }
+    #logo{
+        height: 60px;
+        width: 70px;
+    }
+    #logo-text{
+        height: 25px;
+        width: 60px;
+    }
+    #open-side{
+        font-size: 18px;
+    }
+    #header-space{
+        display: block;
+        flex: 1;
+        padding: 24px;
+    }
+    #content-title{
+        font-size: 18px;
+        width: inherit;
+        flex-wrap: wrap;
+    }
+    #NPIcon-wrapper{
+        height: 200px;
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
+    #NPIcon-img{
+        height: 200px;
+        width: 250px;
+    }
+    #main-content{
+        font-size: 12px;
+        width: inherit;
+        flex-wrap: wrap;
+        margin-bottom: 200px;
+    }
+    #writer{
+        margin-top: 0px;
+        margin-bottom: -50px;
+    }
+    #writer p{
+        font-size: 10px;
+    }
+    
+    #writer h6{
+        font-size: 10px;
+    }
+}
+
+.footer{}
